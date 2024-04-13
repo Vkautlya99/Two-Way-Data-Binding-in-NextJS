@@ -4,6 +4,10 @@ import React, { useState } from 'react'
 const page = () => {
   const [Text, setText] = useState("");
 
+  // const mytext = (e)=>{
+  //   setText(e.target.value);
+  //   console.log(Text)
+  // }
 
 
   return (
@@ -18,7 +22,9 @@ const page = () => {
         type="text"
         className='text-xl m-10 px-3 py-2 h-14 align-middle items-center justify-between border-black border-2'
         
-        value={Text}        
+        value={Text}  
+
+        // onChange={mytext}
         onChange={(e) => {
           setText(e.target.value);
           console.log(Text)
